@@ -5,54 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Westworth - Web Developer</title>
     <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Source+Code+Pro:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset some default styles and consolidate font definitions */
+      body,
+      h1,
+      h2,
+      p,
+      ul {
+        margin: 0;
+        padding: 0;
+        font-family: "M PLUS Code Latin", "Source Code Pro", Arial, sans-serif;
+      }
+
+      body {
+        background-color: #222; /* Black background */
+        color: #fff; /* White text */
+        line-height: 1.6;
+      }
+
+      /* Center containers */
+      .container {
+        max-width: 800px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the container horizontally */
+      }
+
+      header {
+        background-color: #333; /* Dark Grey background for header */
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Styles for the navigation bar */
+      nav {
+        background-color: #333; /* Dark Grey background for the navigation bar */
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 15px;
+        list-style: none;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff; /* White text for navigation links */
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #00f; /* Blue background on hover */
+      }
+
+      h1 {
+        color: rgb(60, 60, 255); /* Blue text for the main header */
+      }
+
+      section {
+        padding: 40px;
+      }
+
+      h2 {
+        color: rgb(60, 60, 255); /* Blue text for section headers */
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      #skills ul {
+        columns: 2;
+      }
+
+      /* Styles for generic class */
+      .your-class-name {
+        margin-bottom: 20px;
+      }
+
+      /* Media Queries for responsiveness */
+      @media only screen and (max-width: 768px) {
+        section {
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Simon Westworth</h1>
-      <p>Web Developer</p>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Simon Westworth</h1>
+        <p>Web Developer</p>
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Write a brief introduction about yourself and your passion for web
-        development.
-      </p>
-    </section>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Write a brief introduction about yourself and your passion for web
+          development.
+        </p>
+      </section>
+    </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>React</li>
-        <li>Redux</li>
-        <li>Node.JS</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
+    <div class="container">
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Node.JS</li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </section>
+    </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div>
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
-      </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
-      </div>
-      <!-- Add more project sections as needed -->
-    </section>
+    <div class="container">
+      <section id="projects">
+        <h2>Projects</h2>
+        <div>
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
+        </div>
+        <div>
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more project sections as needed -->
+      </section>
+    </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: SCLW@me.com</p>
-      <p>LinkedIn: linkedin.com/in/yourprofile</p>
-      <!-- Add more contact information as needed -->
-    </section>
+    <div class="container">
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:SCLW@me.com">Email</a></p>
+        <a
+          href="https://www.linkedin.com/in/simon-westworth-008799286/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <!-- Add more contact information as needed -->
+      </section>
+    </div>
+
+    <div class="container">
+      <footer>
+        <p>&copy; 2023 Simon Westworth - Web Developer</p>
+      </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
