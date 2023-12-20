@@ -12,7 +12,7 @@ ul {
 /* Styles for headers */
 h1,
 h2 {
-  color: rgb(60, 60, 255);
+  color: #ffffff;
 }
 
 h1 {
@@ -42,6 +42,9 @@ nav li {
   display: inline-block;
   margin: 0 15px;
   list-style: none;
+  color: #ffffff;
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 nav a {
@@ -53,9 +56,11 @@ nav a {
 }
 
 nav a:hover {
-  background: #00f;
+  background: #ffffff;
 }
-
+a:visited {
+  color: rgb(0, 29, 250); /* You can set the color you prefer */
+}
 /* Reset and consolidate font definitions */
 h1 img {
   max-width: 100%;
@@ -87,7 +92,7 @@ section {
 
 /* Styles for section headers */
 h2 {
-  color: rgb(60, 60, 255);
+  color: #ffffff;
 }
 
 ul {
@@ -98,6 +103,70 @@ li {
   margin-bottom: 10px;
 }
 
+div {
+  margin-bottom: 20px; /* Adjust the value to control the space between <p> and <a> */
+}
+
+div h3 {
+  color: #007bff; /* Change the color to your preference */
+}
+
+div p {
+  line-height: 1.6;
+  color: #fff; /* Change the color to your preference */
+}
+
+div a {
+  display: inline-block; /* Ensures the margin is applied horizontally */
+  margin-top: 10px; /* Adjust the value to control the space between <p> and <a> */
+}
+
+div a i {
+  color: #ffffff;
+  font-size: 2em; /* Adjust the size using em units */
+}
+
+#about {
+  text-align: center; /* Add this line to center-align the text */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#about h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto; /* Center the paragraph horizontally within its container */
+}
+
+#projects {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#projects h2 {
+  color: #ffffff;
+}
+
+#projects div {
+  margin-bottom: 20px;
+}
+
+#projects h3 {
+  color: #007bff; /* Change the color to your preference */
+}
+
+#projects p {
+  line-height: 1.8;
+}
 /* Styles for skills section */
 #skills ul {
   margin-top: 20px;
@@ -115,7 +184,6 @@ li {
 #contact {
   text-align: center;
 }
-
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -130,18 +198,29 @@ li {
   text-decoration: underline;
 }
 
-.far.fa-paper-plane {
-  color: #fff;
-}
-
-.fab.fa-linkedin {
-  color: #0077b5;
-}
-
 .far.fa-paper-plane,
-.fab.fa-linkedin {
-  font-size: 34px;
+.fab.fa-linkedin,
+.fa-square-github,
+.fa-code {
+  font-size: 2em; /* Adjust the size using em units */
   margin: 0 10px;
+  color: #fff; /* Apply common styles to all icons */
+}
+
+/* Footer styles */
+.container footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Adjust the styling for the copyright text */
+.container footer p {
+  margin: 0;
+  font-size: 10px;
 }
 
 /* Media Queries for responsiveness */
