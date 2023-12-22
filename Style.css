@@ -222,17 +222,6 @@ div a i {
   margin: 0 10px;
   color: #fff; /* Apply common styles to all icons */
 }
-
-/* Footer styles */
-.container footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  bottom: 0;
-}
-
 #backToTopBtn {
   display: none;
   position: fixed;
@@ -253,6 +242,16 @@ div a i {
   background-color: #007bff; /* Change the color to a slightly darker shade on hover */
   transform: scale(1.1); /* Optional: Add a scaling effect on hover */
   color: #fff;
+}
+
+/* Footer styles */
+.container footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
 }
 
 /* Adjust the styling for the copyright text */
