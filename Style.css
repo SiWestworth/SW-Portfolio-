@@ -217,10 +217,12 @@ div a i {
 .far.fa-paper-plane,
 .fab.fa-linkedin,
 .fa-square-github,
-.fa-code {
+.fa-code
+.fa-user {
   font-size: 2em; /* Adjust the size using em units */
   margin: 0 10px;
   color: #fff; /* Apply common styles to all icons */
+  padding-top: 20px;
 }
 #backToTopBtn {
   display: none;
@@ -315,7 +317,7 @@ div a i {
     color: #fff;
   }
 }
-
+/*
 form {
   max-width: 400px;
   width: 80%;
@@ -346,7 +348,6 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
 }
 
 button:hover {
