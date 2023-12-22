@@ -20,6 +20,21 @@ h1 {
   margin-bottom: 20px;
 }
 
+@keyframes rock {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Add more styles for the image as needed */
+.rocking-image {
+  width: 300px; /* Adjust the width to your preference */
+  height: auto; /* Maintain the aspect ratio */
+}
+
 /* Header styles */
 header {
   background: #222;
@@ -255,24 +270,4 @@ div a i {
   }
 }
 
-/* Styles for the back-to-top button */
-#backToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #0056b3;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 15px; /* Equal padding for both height and width */
-  font-size: 1.8em;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#backToTopBtn:hover {
-  background-color: #ffffff; /* Change the color to a slightly darker shade on hover */
-  color: #0056b3;
-}
+/* Styles

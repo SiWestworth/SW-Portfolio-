@@ -1,5 +1,33 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
+  const image = document.querySelector(".rocking-image");
+
+  // Set up the Intersection Observer configuration
+  const options = {
+    threshold: 0.5, // Trigger the callback when 50% of the image is in view
+  };
+
+  // Callback function when the image is in view
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Start rocking animation
+        image.style.animation = "rock 2s infinite alternate";
+      } else {
+        // Stop animation when not in view
+        image.style.animation = "none";
+      }
+    });
+  }
+
+  // Create an Intersection Observer instance
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  // Observe the target image
+  observer.observe(image);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   // Get all the skill icons
   const skillIcons = document.querySelectorAll(".container #skills i");
 
