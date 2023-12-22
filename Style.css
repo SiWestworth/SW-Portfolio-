@@ -74,7 +74,7 @@ nav a:hover {
   background: rgb(0, 29, 250);
 }
 a:visited {
-  color: rgb(0, 29, 250); /* You can set the color you prefer */
+  color: #adadad; /* You can set the color you prefer */
 }
 /* Reset and consolidate font definitions */
 h1 img {
