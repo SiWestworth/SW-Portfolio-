@@ -233,6 +233,28 @@ div a i {
   bottom: 0;
 }
 
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff; /* Change the color to your preference */
+  color: #007bff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px; /* Increase padding for a larger button */
+  font-size: 1.8em; /* Increase font size for a larger button */
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle box shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for the transform property */
+}
+
+#backToTopBtn:hover {
+  background-color: #007bff; /* Change the color to a slightly darker shade on hover */
+  transform: scale(1.1); /* Optional: Add a scaling effect on hover */
+  color: #fff;
+}
+
 /* Adjust the styling for the copyright text */
 .container footer p {
   margin: 0;
@@ -258,16 +280,39 @@ div a i {
   section {
     padding: 15px;
   }
+  #backToTopBtn {
+    display: block; /* Show the button on screens with max-width: 768px */
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   section {
     padding: 10px;
   }
-}
 
-/* Styles
+  #backToTopBtn {
+    display: block; /* Show the button on screens with max-width: 768px */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff; /* Change the color to your preference */
+    color: #007bff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px; /* Increase padding for a larger button */
+    font-size: 1.5em; /* Increase font size for a larger button */
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle box shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for the transform property */
+  }
+
+  #backToTopBtn:hover {
+    background-color: #007bff; /* Change the color to a slightly darker shade on hover */
+    transform: scale(1.1); /* Optional: Add a scaling effect on hover */
+    color: #fff;
+  }
+}
