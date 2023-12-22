@@ -20,6 +20,21 @@ h1 {
   margin-bottom: 20px;
 }
 
+@keyframes rock {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Add more styles for the image as needed */
+.rocking-image {
+  width: 300px; /* Adjust the width to your preference */
+  height: auto; /* Maintain the aspect ratio */
+}
+
 /* Header styles */
 header {
   background: #222;
@@ -167,6 +182,7 @@ div a i {
 #projects p {
   line-height: 1.8;
 }
+
 /* Styles for skills section */
 #skills ul {
   margin-top: 20px;
@@ -253,3 +269,5 @@ div a i {
     padding: 10px;
   }
 }
+
+/* Styles
