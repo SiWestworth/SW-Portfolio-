@@ -199,7 +199,46 @@ div a i {
 /* Contact section styles */
 #contact {
   text-align: center;
+  margin: 0 auto; /* Center the contact section horizontally */
 }
+/* Form styling */
+form {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto; /* Center the form horizontally within the contact section */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ffffff;
+  color: #007bff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -217,13 +256,13 @@ div a i {
 .far.fa-paper-plane,
 .fab.fa-linkedin,
 .fa-square-github,
-.fa-code
-.fa-user {
+.fa-code .fa-user {
   font-size: 2em; /* Adjust the size using em units */
   margin: 0 10px;
   color: #fff; /* Apply common styles to all icons */
   padding-top: 20px;
 }
+
 #backToTopBtn {
   display: none;
   position: fixed;
@@ -252,104 +291,5 @@ div a i {
   color: #fff;
   text-align: center;
   padding: 20px;
-  width: 100%;
-  bottom: 0;
-}
-
-/* Adjust the styling for the copyright text */
-.container footer p {
-  margin: 0;
-  font-size: 10px;
-}
-
-/* Media Queries for responsiveness */
-@media only screen and (max-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-
-  section {
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .container {
-    max-width: 768px;
-  }
-
-  section {
-    padding: 15px;
-  }
-  #backToTopBtn {
-    display: block; /* Show the button on screens with max-width: 768px */
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-
-  section {
-    padding: 10px;
-  }
-
-  #backToTopBtn {
-    display: block; /* Show the button on screens with max-width: 768px */
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #fff; /* Change the color to your preference */
-    color: #007bff;
-    border: none;
-    border-radius: 50%;
-    padding: 10px; /* Increase padding for a larger button */
-    font-size: 1.5em; /* Increase font size for a larger button */
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle box shadow */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for the transform property */
-  }
-
-  #backToTopBtn:hover {
-    background-color: #007bff; /* Change the color to a slightly darker shade on hover */
-    transform: scale(1.1); /* Optional: Add a scaling effect on hover */
-    color: #fff;
-  }
-}
-/*
-form {
-  max-width: 400px;
-  width: 80%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #222;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #fff;
+  width: auto;
 }
