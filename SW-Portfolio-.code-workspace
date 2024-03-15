@@ -1,9 +1,19 @@
 {
   "folders": [
-	{
-		"name": "SW-Portfolio-",
-		"path": "."
-	}
-],
-  "settings": {}
+    {
+      "name": "SW-Portfolio-",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 4,
+    "files.exclude": {
+      "**/.git": true
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "python.pythonPath": "/usr/local/bin/python3"
+  }
 }

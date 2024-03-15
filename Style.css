@@ -225,7 +225,6 @@ div a i {
   color: #fff; /* Apply common styles to all icons */
   padding-top: 20px;
 }
-
 #backToTopBtn {
   display: none;
   position: fixed;
